@@ -92,19 +92,71 @@ PM_START_TEXT = """
 """
 
 buttons = [
+
     [
-        InlineKeyboardButton(text=f"About {dispatcher.bot.first_name}", callback_data="emiko_"),
-    ],
-    [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
+
+            text="➕ Add Me To Your Chat ➕",
+
+            url="t.me/Emikoo_bot?startgroup=true",
+
         ),
+
     ],
+
     [
+
         InlineKeyboardButton(
-            text="➗ Add Me To Your Group ➗", url=f"t.me/{bu}?startgroup=new"),
+
+            text="My King",
+
+            url="t.me/Zenko_0",
+
+        ),
+
+        InlineKeyboardButton(
+
+            text="Owner State",
+
+            url="t.me/Mysticpfp",
+
+        ),
+
+     ],
+
+    [
+
+        InlineKeyboardButton(
+
+            text="Support",
+
+            url="t.me/EmikooXsupport",
+
+        ),
+
+        InlineKeyboardButton(
+
+            text="Updates",
+
+            url="",
+
+        ),
+
     ],
+
+    [
+
+        InlineKeyboardButton(
+
+            text="Help & Cmds ❔",
+
+            callback_data="help_back",
+
+        ),
+
+    ],
+
 ]
 
 
@@ -112,8 +164,8 @@ HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @excrybaby \
+DONATE_STRING = """Hey Baby, glad to hear you want to donate!
+ You can support the project by contacting @Zenko_0 \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -230,7 +282,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"👋 Hi, I'm {dispatcher.bot.first_name}. Nice to meet You.",
+            f"Hi Baby, I'm {dispatcher.bot.first_name}. I Am Waiting For This Movement.",
             parse_mode=ParseMode.HTML
        )
 
